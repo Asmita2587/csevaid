@@ -1,6 +1,7 @@
 package jar.controller;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -34,7 +35,7 @@ public class StudentController {
 
         db.save(obj);
 
-        res.put("msg", "welcom post api endpoint");
+        res.put("message", "welcome post api endpoint");
         res.put("status", 201);
         res.put("student", obj.getName());
 

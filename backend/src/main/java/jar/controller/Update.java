@@ -36,7 +36,7 @@ public Map<Object, Object> updateStudent(@PathVariable Long id, @RequestBody Stu
     db.save(obj);
 
     res.put("message", "Student updated successfully");
-    res.put("status", 201);
+    res.put("status", 200);
     res.put("student", obj.getName());
 
     return res;
